@@ -142,3 +142,7 @@ Follow `docs/demo-flow.md`.
 * On-chain settlement and proof anchoring
 * Real model inference via EigenAI
 * Stronger signature scheme (public-key not HMAC)
+
+## Architecture-diagram
+<img width="757" height="742" alt="image" src="https://github.com/user-attachments/assets/dd2bed57-77c5-466e-a91f-89aa4e4a7d01" />
+
