@@ -1,0 +1,189 @@
+{
+  "jobId": "job_da9ec7e77bd4dd64",
+  "manifest": {
+    "jobId": "job_da9ec7e77bd4dd64",
+    "modelVersion": "det-embed-v1",
+    "shardIds": [
+      "shard-1",
+      "shard-2",
+      "shard-3"
+    ],
+    "shardHashes": {
+      "shard-1": "7a3d27edb870fee0db947ddadd91e4170874a96c599ea3450736091619beba56",
+      "shard-2": "2779c80bbfd0bd0ebd18c7449529b9c338e273500ac2bdddf184746840cff468",
+      "shard-3": "4e8f17d51c8e020eef0b95ce0a8ad7448ea86cd44c2ced87e23c31a574bcb4db"
+    },
+    "recompositionRule": "concat",
+    "createdAt": "2026-03-11T04:52:17.355Z"
+  },
+  "operatorResults": [
+    {
+      "jobId": "job_da9ec7e77bd4dd64",
+      "shardId": "shard-1",
+      "operatorId": "operator-1",
+      "output": [
+        [
+          2.341533,
+          2.073797,
+          2.264884,
+          1.98574,
+          2.151515,
+          1.919073,
+          1.834938,
+          1.805704
+        ],
+        [
+          1.836007,
+          1.876649,
+          2.141176,
+          1.921569,
+          1.659893,
+          1.912656,
+          2.08984,
+          1.999643
+        ],
+        [
+          1.84385,
+          2.075223,
+          1.909447,
+          2.03779,
+          2.055258,
+          2.119786,
+          1.951515,
+          2.05098
+        ]
+      ],
+      "outputHash": "8a82d9b26a5b9f8f8f26dcfee24616a5d79a2fcd537609e876e029005034e869",
+      "signature": "9027c0aeaedf034412aab9e0e279f2c9373c89474b6da8ff44b19389635c7f82"
+    },
+    {
+      "jobId": "job_da9ec7e77bd4dd64",
+      "shardId": "shard-2",
+      "operatorId": "operator-2",
+      "output": [
+        [
+          2.263047,
+          2.091403,
+          1.986425,
+          2.003017,
+          2.351735,
+          2.182504,
+          1.88356,
+          2.205732
+        ],
+        [
+          2.24736,
+          1.877225,
+          1.801508,
+          1.921569,
+          1.851885,
+          2.042232,
+          1.835294,
+          1.923982
+        ],
+        [
+          2.169935,
+          2.139869,
+          2.086928,
+          2.135621,
+          2.174837,
+          1.852941,
+          2.242157,
+          2.016667
+        ]
+      ],
+      "outputHash": "efda32f4d180be1d05558dc45d48695931e2f835bf37ada1abb48bb243bfa0b9",
+      "signature": "0799056961fb948b35f16354fc399134541be0cb4c8151e2b0bb336c9e388b58"
+    },
+    {
+      "jobId": "job_da9ec7e77bd4dd64",
+      "shardId": "shard-3",
+      "operatorId": "operator-3",
+      "output": [
+        [
+          2.18268,
+          2.176797,
+          2.528431,
+          1.92451,
+          1.980392,
+          2.007843,
+          2.103922,
+          2.010458
+        ],
+        [
+          1.994771,
+          1.864488,
+          2.062745,
+          1.952941,
+          2.084967,
+          2.219608,
+          1.703268,
+          1.71329
+        ],
+        [
+          1.956078,
+          2.100784,
+          2.022745,
+          2.005882,
+          2.103137,
+          2.003922,
+          1.668627,
+          2.163529
+        ]
+      ],
+      "outputHash": "ea439b9e834dc38fb0cad0721420f29824b68c36278aa35e2def4a9e298bdff6",
+      "signature": "4e4512160a0f2f800d33e0ceefff6ec0481533b8102ee01fb912b5d2a74e4238"
+    },
+    {
+      "jobId": "job_da9ec7e77bd4dd64",
+      "shardId": "shard-2",
+      "operatorId": "operator-3",
+      "output": [
+        [
+          2.263047,
+          2.091403,
+          1.986425,
+          2.003017,
+          2.351735,
+          2.182504,
+          1.88356,
+          2.205732
+        ],
+        [
+          2.24736,
+          1.877225,
+          1.801508,
+          1.921569,
+          1.851885,
+          2.042232,
+          1.835294,
+          1.923982
+        ],
+        [
+          2.169935,
+          2.139869,
+          2.086928,
+          2.135621,
+          2.174837,
+          1.852941,
+          2.242157,
+          2.016667
+        ]
+      ],
+      "outputHash": "efda32f4d180be1d05558dc45d48695931e2f835bf37ada1abb48bb243bfa0b9",
+      "signature": "71fa0143b72f010aabdaca2cf440bab370d2af57ed8576f5286ee3e66e3cc704"
+    }
+  ],
+  "finalOutputHash": "9908b94dadc9b0fbd5a6cd8927e0ee373393adc3c91ba8f40118cbabc1b159eb",
+  "recompositionValid": true,
+  "createdAt": "2026-03-11T04:52:17.374Z",
+  "dispute": {
+    "enabled": true,
+    "shardId": "shard-2",
+    "comparedOperatorIds": [
+      "operator-2",
+      "operator-3"
+    ],
+    "match": true
+  }
+}

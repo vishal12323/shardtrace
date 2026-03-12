@@ -1,0 +1,45 @@
+{
+  "jobId": "job_cd4db0739b40e7f2",
+  "createdAt": "2026-03-11T04:11:00.981Z",
+  "documents": [
+    "doc one",
+    "doc two",
+    "doc three"
+  ],
+  "shards": [
+    {
+      "shardId": "shard-1",
+      "documents": [
+        "doc one"
+      ]
+    },
+    {
+      "shardId": "shard-2",
+      "documents": [
+        "doc two"
+      ]
+    },
+    {
+      "shardId": "shard-3",
+      "documents": [
+        "doc three"
+      ]
+    }
+  ],
+  "manifest": {
+    "jobId": "job_cd4db0739b40e7f2",
+    "modelVersion": "det-embed-v1",
+    "shardIds": [
+      "shard-1",
+      "shard-2",
+      "shard-3"
+    ],
+    "shardHashes": {
+      "shard-1": "87ba9ffc669d48d8ac09d0a64b81132264604346fe4cd5d80997b7178f4d7bf8",
+      "shard-2": "41204aed1633d0e1134b2dad4a0bab59ac88a6e497ae29fc6e7354583f98e1d6",
+      "shard-3": "c73495858284b6c260a8c40ac1ddc1d75608719804f523920995e0af7e5d1f0e"
+    },
+    "recompositionRule": "concat",
+    "createdAt": "2026-03-11T04:11:00.981Z"
+  }
+}

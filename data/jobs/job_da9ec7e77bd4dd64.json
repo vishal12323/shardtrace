@@ -1,0 +1,57 @@
+{
+  "jobId": "job_da9ec7e77bd4dd64",
+  "createdAt": "2026-03-11T04:52:17.355Z",
+  "documents": [
+    "Refinery utilization rose modestly week over week, but regional constraints remain.",
+    "Traffic camera counts dipped during the storm window, then rebounded the following day.",
+    "Pipeline nominations indicate a steady flow with minor disruptions near the hub.",
+    "Retail fuel prices softened slightly, with diesel holding firmer than gasoline.",
+    "Port activity shows a seasonal increase in container throughput and truck turn times.",
+    "Macro data suggests resilient demand despite tightening financial conditions.",
+    "Holiday travel patterns shifted earlier, increasing weekday volumes on key corridors.",
+    "Industrial output eased in the latest print, weighing on freight movement indicators.",
+    "Weather-adjusted mobility remains above the prior-year baseline across major metros."
+  ],
+  "shards": [
+    {
+      "shardId": "shard-1",
+      "documents": [
+        "Refinery utilization rose modestly week over week, but regional constraints remain.",
+        "Retail fuel prices softened slightly, with diesel holding firmer than gasoline.",
+        "Holiday travel patterns shifted earlier, increasing weekday volumes on key corridors."
+      ]
+    },
+    {
+      "shardId": "shard-2",
+      "documents": [
+        "Traffic camera counts dipped during the storm window, then rebounded the following day.",
+        "Port activity shows a seasonal increase in container throughput and truck turn times.",
+        "Industrial output eased in the latest print, weighing on freight movement indicators."
+      ]
+    },
+    {
+      "shardId": "shard-3",
+      "documents": [
+        "Pipeline nominations indicate a steady flow with minor disruptions near the hub.",
+        "Macro data suggests resilient demand despite tightening financial conditions.",
+        "Weather-adjusted mobility remains above the prior-year baseline across major metros."
+      ]
+    }
+  ],
+  "manifest": {
+    "jobId": "job_da9ec7e77bd4dd64",
+    "modelVersion": "det-embed-v1",
+    "shardIds": [
+      "shard-1",
+      "shard-2",
+      "shard-3"
+    ],
+    "shardHashes": {
+      "shard-1": "7a3d27edb870fee0db947ddadd91e4170874a96c599ea3450736091619beba56",
+      "shard-2": "2779c80bbfd0bd0ebd18c7449529b9c338e273500ac2bdddf184746840cff468",
+      "shard-3": "4e8f17d51c8e020eef0b95ce0a8ad7448ea86cd44c2ced87e23c31a574bcb4db"
+    },
+    "recompositionRule": "concat",
+    "createdAt": "2026-03-11T04:52:17.355Z"
+  }
+}

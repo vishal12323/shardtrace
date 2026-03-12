@@ -1,0 +1,23 @@
+{
+  "name": "shardtrace",
+  "private": true,
+  "packageManager": "pnpm@9.15.5",
+  "scripts": {
+    "build:shared": "pnpm --filter @shardtrace/shared build",
+    "dev:packages": "pnpm -r --filter \"./packages/**\" dev",
+    "dev:web": "pnpm --filter web dev",
+    "dev:coordinator": "pnpm --filter coordinator dev",
+    "dev:op1": "pnpm --filter operator-1 dev",
+    "dev:op2": "pnpm --filter operator-2 dev",
+    "dev:op3": "pnpm --filter operator-3 dev",
+    "verify:proof": "pnpm --filter coordinator exec tsx src/verify-proof.ts",
+    "dev": "pnpm build:shared && concurrently \"pnpm dev:packages\" \"pnpm dev:coordinator\" \"pnpm dev:op1\" \"pnpm dev:op2\" \"pnpm dev:op3\" \"pnpm dev:web\"",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "concurrently": "^9.1.2",
+    "typescript": "^5.8.2"
+  }
+}

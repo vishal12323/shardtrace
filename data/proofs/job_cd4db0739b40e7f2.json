@@ -1,0 +1,109 @@
+{
+  "jobId": "job_cd4db0739b40e7f2",
+  "manifest": {
+    "jobId": "job_cd4db0739b40e7f2",
+    "modelVersion": "det-embed-v1",
+    "shardIds": [
+      "shard-1",
+      "shard-2",
+      "shard-3"
+    ],
+    "shardHashes": {
+      "shard-1": "87ba9ffc669d48d8ac09d0a64b81132264604346fe4cd5d80997b7178f4d7bf8",
+      "shard-2": "41204aed1633d0e1134b2dad4a0bab59ac88a6e497ae29fc6e7354583f98e1d6",
+      "shard-3": "c73495858284b6c260a8c40ac1ddc1d75608719804f523920995e0af7e5d1f0e"
+    },
+    "recompositionRule": "concat",
+    "createdAt": "2026-03-11T04:11:00.981Z"
+  },
+  "operatorResults": [
+    {
+      "jobId": "job_cd4db0739b40e7f2",
+      "shardId": "shard-1",
+      "operatorId": "operator-1",
+      "output": [
+        [
+          1.341176,
+          1.880392,
+          1.568627,
+          2.037255,
+          2.366667,
+          1.211765,
+          1.468627,
+          1.996078
+        ]
+      ],
+      "outputHash": "2e96151867d03a18f2a1db4a3a19c79b31ccee164a37d1ca221abb1fd8b108a6",
+      "signature": "869f32766a6263bb85a8b0f85e0d18be6e3222b7069a8812551a10fc2a91972a"
+    },
+    {
+      "jobId": "job_cd4db0739b40e7f2",
+      "shardId": "shard-2",
+      "operatorId": "operator-2",
+      "output": [
+        [
+          1.721569,
+          2.496078,
+          2.24902,
+          2.62549,
+          2.423529,
+          1.22549,
+          1.943137,
+          2.323529
+        ]
+      ],
+      "outputHash": "cabb011e8c31926c474dc1a568559d66dce7895404d4d67bf84aeca6957f4bfc",
+      "signature": "03a186face3065686dc4b47602880f12f4471574fb0f4c2dff10577680356974"
+    },
+    {
+      "jobId": "job_cd4db0739b40e7f2",
+      "shardId": "shard-3",
+      "operatorId": "operator-3",
+      "output": [
+        [
+          1.586275,
+          2.127451,
+          1.517647,
+          2.198039,
+          2.135294,
+          1.34902,
+          1.333333,
+          1.452941
+        ]
+      ],
+      "outputHash": "5eebcc476f790621fb9839b402c17779f91129dfa3d8a48e4965a9b0c84b8dc5",
+      "signature": "331c994f38df1e5a3fc8962fdb18713d0044e4f905f02e7a82b001fe8e67118f"
+    },
+    {
+      "jobId": "job_cd4db0739b40e7f2",
+      "shardId": "shard-2",
+      "operatorId": "operator-3",
+      "output": [
+        [
+          1.721569,
+          2.496078,
+          2.24902,
+          2.62549,
+          2.423529,
+          1.22549,
+          1.943137,
+          2.323529
+        ]
+      ],
+      "outputHash": "cabb011e8c31926c474dc1a568559d66dce7895404d4d67bf84aeca6957f4bfc",
+      "signature": "40fc828d9b447ecf65f441c75f927bb5e88d521f462b325141fe92245a66ec09"
+    }
+  ],
+  "finalOutputHash": "06e8b31af4a7566620c85fcf0f442fff72b76b707559b9c44735e98afe7128d0",
+  "recompositionValid": true,
+  "createdAt": "2026-03-11T04:11:01.046Z",
+  "dispute": {
+    "enabled": true,
+    "shardId": "shard-2",
+    "comparedOperatorIds": [
+      "operator-2",
+      "operator-3"
+    ],
+    "match": true
+  }
+}
