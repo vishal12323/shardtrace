@@ -1,0 +1,40 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "ProofPay",
+  "description": "Verifiable sharded AI inference agent deployed on EigenCompute TEE. Splits inference jobs across distributed operators, collects cryptographic attestations from each, verifies proof bundles, and settles payment on-chain — releasing ETH to operators only if execution is cryptographically verified, or refunding the submitter if it fails. Built on ShardTrace.",
+  "image": "https://github.com/vishal12323/shardtrace/raw/main/docs/architecture-diagram.png",
+  "active": true,
+  "x402Support": true,
+  "supportedTrust": ["tee-attestation", "crypto-economic"],
+  "services": [
+    {
+      "name": "web",
+      "endpoint": "https://verify-sepolia.eigencloud.xyz/app/0xfd35d56978B8511611d16DE635Fd079AB7aB3A64",
+      "version": "1.0.0"
+    },
+    {
+      "name": "A2A",
+      "endpoint": "https://verify-sepolia.eigencloud.xyz/app/0xfd35d56978B8511611d16DE635Fd079AB7aB3A64/run-job",
+      "version": "1.0.0",
+      "skills": ["sharded-inference", "proof-verification", "on-chain-settlement"],
+      "domains": ["verifiable-compute", "distributed-inference", "payment-escrow"]
+    }
+  ],
+  "registrations": [
+    {
+      "agentId": 34638,
+      "agentRegistry": "synthesis:11155111:0x8004A818BFB912233c491871b3d84c89A494BD9e"
+    }
+  ],
+  "contracts": [
+    {
+      "name": "ProofPayEscrow",
+      "address": "0x29c70d2F30C5314932A927b62EB8c4A68F13b41C",
+      "chainId": 11155111,
+      "network": "sepolia"
+    }
+  ],
+  "operatorWallet": "0x873035f45fbD7FE8984655B432611F0314513f5e",
+  "repository": "https://github.com/vishal12323/shardtrace",
+  "humanCollaborator": "Vishal"
+}
