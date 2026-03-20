@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\visha\\OneDrive\\Documents\\shardtrace\\contracts\\contracts\\ProofPayEscrow.sol": {
+      "lastModificationDate": 1773964336332,
+      "contentHash": "c904b9db246208cf5a50a600d59ef786",
+      "sourceName": "contracts/ProofPayEscrow.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ProofPayEscrow"
+      ]
+    }
+  }
+}

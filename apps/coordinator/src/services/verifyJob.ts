@@ -9,6 +9,7 @@ import {
   verifyRecompositionConcat
 } from "@shardtrace/proof-engine";
 import { OPERATORS } from "./operatorRegistry.js";
+import { settleJobOnChain } from "./onChainSettlement.js";
 
 type VerifyOk = {
   ok: true;
@@ -93,6 +94,13 @@ export async function verifyJob(args: {
       const proofDir = path.resolve(process.cwd(), "../../data/proofs");
       await mkdir(proofDir, { recursive: true });
       await writeFile(path.join(proofDir, `${args.manifest.jobId}.json`), JSON.stringify(proof, null, 2), "utf8");
+
+      // Settle payment on-chain based on whether recomposition was valid.
+      // No-ops if PROOFPAY_CONTRACT_ADDRESS / COORDINATOR_PRIVATE_KEY are not set.
+      settleJobOnChain(args.manifest.jobId, recompositionValid).catch((err) => {
+        console.error("[ProofPay] settleJobOnChain failed:", err);
+      });
+
       return proof;
     }
   };

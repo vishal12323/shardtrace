@@ -5,6 +5,8 @@ import { dispatchShards } from "../services/dispatchShards.js";
 import { collectResults } from "../services/collectResults.js";
 import { recomposeResults } from "../services/recomposeResults.js";
 import { verifyJob } from "../services/verifyJob.js";
+import { OPERATORS } from "../services/operatorRegistry.js";
+import { submitJobOnChain } from "../services/onChainSettlement.js";
 
 const RunJobBodySchema = z.object({
   documents: z.array(z.string()).min(1)
@@ -14,6 +16,18 @@ export const runJobRoute: RouteHandlerMethod = async (req, reply) => {
   const body = RunJobBodySchema.parse(req.body);
 
   const job = await createJob({ documents: body.documents });
+
+  // Escrow ETH for this job. Collects wallet addresses from the operator registry.
+  // No-ops gracefully if PROOFPAY_CONTRACT_ADDRESS or COORDINATOR_PRIVATE_KEY are not set.
+  const operatorWallets = Object.values(OPERATORS)
+    .map((op) => op.walletAddress)
+    .filter((addr) => addr.length > 0);
+  if (operatorWallets.length > 0) {
+    submitJobOnChain(job.manifest.jobId, operatorWallets).catch((err) => {
+      console.error("[ProofPay] submitJobOnChain failed:", err);
+    });
+  }
+
   const dispatchPlan = await dispatchShards({ manifest: job.manifest, shards: job.shards });
   const operatorResults = await collectResults({ dispatchPlan });
 
